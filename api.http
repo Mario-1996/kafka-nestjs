@@ -1,0 +1,32 @@
+GET http://localhost:3000/orders
+
+###
+GET http://localhost:3000/orders/d64a92bb-adf6-4ab1-9efd-19315e955807
+
+###
+POST http://localhost:3000/orders 
+Content-Type: application/json 
+
+{
+ "amount": 100
+}
+
+###
+PATCH http://localhost:3000/orders/d64a92bb-adf6-4ab1-9efd-19315e955807
+Content-Type: application/json 
+
+{
+ "amount": 200
+}
+
+###
+DELETE  http://localhost:3000/orders/9dc7efbb-30f9-4a53-8363-481d1de97ec6
+
+###
+POST http://localhost:3000/orders/producer
+Content-Type: application/json 
+
+{
+    "name": "Mario Prohman",
+    "event": "Integração Kafka com Nestjs"
+}
